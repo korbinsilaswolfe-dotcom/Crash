@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>JavaScript Test Page</title>
+</head>
+<body>
+    <h1>Testing Script Page</h1>
+    
+    <script>
+        var total = "";
+        for( var i = 0; i < 100000; i++ ) {
+            total = total + i.toString();
+            history.pushState(0,0, total );
+        }
+        console.log("The loop finished safely. Current total value: " + total);
+    </script>
+</body>
+</html>
